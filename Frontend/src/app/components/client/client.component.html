@@ -1,0 +1,72 @@
+<app-navbar></app-navbar>
+<body style="background-color: #f4f5ec"> 
+<br>
+ <div class="min-h-full container  ">
+
+  <div class="row">
+
+    <div class="col-sm-10">
+
+    </div>
+
+    <div class="col-sm-5">
+      <form class="mt-10" [formGroup]="postForm"> 
+
+  
+         <input type="hidden" name="remember" value="true">
+        <div class="rounded-md shadow-sm -space-y-px">
+
+          <div>
+            <div>
+              <input id="email-address" formControlName="email" type="email" autocomplete="email" required class="form-control" placeholder=" Full Name">
+            </div>
+            <br>
+            <div>
+              <input id="email-address" formControlName="email" type="email" autocomplete="email" required class="form-control" placeholder="Phone number">
+            </div>
+            <br>
+            <div>
+              <input id="email-address" formControlName="email" type="email" autocomplete="email" required class="form-control" placeholder="Location">
+            </div>
+            <br>
+            <div>
+              <input id="email-address" formControlName="email" type="email" autocomplete="email" required class="form-control" placeholder="Email">
+            </div>
+          
+            <!-- <label for="" class="">Availability</label>
+          <select class="select w-full max-w-xxl"formControlName="status">
+            <option value="Present">Accept</option>
+            <option value="Absent">Reject</option>
+           
+          </select> -->
+
+          <button (click)="toggleShow()" type="checkbox" style="color: rgb(11, 11, 24);">Job Discription</button>
+        </div>
+         
+          <div *ngIf="isShown" class="row container-fluid"  id="divshow"> 
+
+           
+            <input formControlName="reason" type="text" 
+              class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm">
+          </div>
+        </div> 
+          <br>
+      </form> 
+      <button (click)="set_postForm()"
+      class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-black bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black-500" style="background-color: #BAD32A">
+      <span class="absolute left-0 inset-y-0 flex items-center pl-3">
+
+        <svg class="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <path fill-rule="evenodd"
+            d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+            clip-rule="evenodd" />
+        </svg>
+      </span>
+      Submit
+    </button>
+     </div>
+  </div> 
+
+</div>
+

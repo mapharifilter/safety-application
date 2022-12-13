@@ -1,0 +1,37 @@
+label{
+    padding-left: 1rem;
+}
+form{
+    //background-color: red;
+     padding: 1rem;
+}
+.row{
+    margin: 150;
+	padding: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+   
+}
+.group{
+   
+    margin:0;
+	padding:60px;
+    width: 40%;
+	height: 40px;
+	margin: 20px auto;
+	justify-content: center;
+	display: block;
+	color: rgb(9, 8, 8);
+	background: #BAD32A;
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 20px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: .2s ease-in;
+	cursor: pointer;
+
+}
